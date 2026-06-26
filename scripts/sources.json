@@ -1,0 +1,14 @@
+{
+  "_comment": "FEEDS the weekly puller reads. ONLY published RSS/Atom feeds or APIs we are permitted to read. No scraping; robots.txt respected. Run discover_feeds.py to populate 'discovered' from the organizations already in the dataset, then promote good ones into 'feeds'. Verify each feed URL resolves before relying on it.",
+  "feeds": [
+    {"name": "Opportunity Desk", "url": "https://opportunitydesk.org/feed/"},
+    {"name": "Youth Opportunities", "url": "https://www.youthop.com/feed"},
+    {"name": "ProFellow (blog feed)", "url": "https://www.profellow.com/feed/"}
+  ],
+  "discovered": [],
+  "_notes": [
+    "ProFellow's blog RSS is public; we read only the published feed, never the paywalled database.",
+    "Add university/funder feeds here only after confirming they publish a feed and permit reading it.",
+    "discover_feeds.py mines data/fellowships.json organizations for feeds automatically."
+  ]
+}
